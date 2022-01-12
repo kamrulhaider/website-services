@@ -4,8 +4,8 @@
 }
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
-  background: #fff;
+  font-size: 14px;
+  margin-right: 30px !important;
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -36,4 +36,7 @@
   height: 100px;
   border-radius: 100%;
   margin-bottom: 5px;
+}
+.swiper-pagination {
+  bottom: auto !important;
 }

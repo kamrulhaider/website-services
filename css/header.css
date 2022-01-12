@@ -9,6 +9,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  animation: header-animation 800ms ease-in;
 }
 .header-bg {
   background-color: rgb(255, 255, 255);
@@ -29,4 +30,16 @@ header {
 }
 .nav-link:hover {
   color: rgb(255, 0, 0) !important;
+}
+
+@keyframes header-animation {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
