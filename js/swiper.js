@@ -1,22 +1,18 @@
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 15,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
+var splide = new Splide('.splide', {
+    perPage: 5,
+    gap: '2rem',
     breakpoints: {
         640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
+            perPage: 2,
+            gap: '.7rem',
+            height: '6rem',
         },
-        768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-        },
-        1024: {
-            slidesPerView: 5,
-            spaceBetween: 50,
+        480: {
+            perPage: 1,
+            gap: '.7rem',
+            height: '6rem',
         },
     },
 });
+
+splide.mount();

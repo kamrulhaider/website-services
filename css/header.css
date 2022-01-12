@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 * {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 header {
   height: 100vh;
@@ -9,37 +9,21 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  animation: header-animation 800ms ease-in;
 }
 .header-bg {
-  background-color: rgb(255, 255, 255);
+  background-color: #423144;
 }
 .phone-email {
-  background-color: rgb(219, 219, 219);
+  background-color: #900d0d;
 }
 .phone-email p {
   font-weight: 700;
   margin: 3px 5px;
+  color: #ffdbc5;
+}
+.logo {
+  color: #ffdbc5 !important;
 }
 .nav-link {
-  color: #000000 !important;
-  font-weight: 700 !important;
-  border-radius: 10px !important;
-  transition: all 0.5s ease !important;
-  margin: 5px 5px;
-}
-.nav-link:hover {
-  color: rgb(255, 0, 0) !important;
-}
-
-@keyframes header-animation {
-  0% {
-    transform: translateY(-100%);
-  }
-  50% {
-    transform: translateY(10%);
-  }
-  100% {
-    transform: translateY(0);
-  }
+  color: #ffdbc5 !important;
 }
