@@ -1,0 +1,21 @@
+.featured-title {
+  width: 60%;
+}
+.featured-title hr {
+  width: 20%;
+  height: 5px;
+  background-color: #900d0d;
+}
+.card {
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 10px black;
+  transition: all 0.3s ease-in-out !important;
+}
+.card,
+.card-img-top {
+  border-radius: 50px 20px 50px 20px;
+}
+.card:hover {
+  box-shadow: 3px 5px 10px black;
+}

@@ -1,5 +1,5 @@
 var splide = new Splide('.splide', {
-    perPage: 5,
+    perPage: 3,
     gap: '2rem',
     breakpoints: {
         640: {
