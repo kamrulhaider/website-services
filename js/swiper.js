@@ -1,18 +1,27 @@
-var splide = new Splide('.splide', {
-    perPage: 3,
-    gap: '2rem',
+var swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    // init: false,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
     breakpoints: {
         640: {
-            perPage: 2,
-            gap: '.7rem',
-            height: '6rem',
+            slidesPerView: 2,
+            spaceBetween: 20,
         },
-        480: {
-            perPage: 1,
-            gap: '.7rem',
-            height: '6rem',
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
         },
-    },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+        },
+    }
 });
-
-splide.mount();

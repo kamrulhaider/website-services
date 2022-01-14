@@ -19,3 +19,16 @@
 .card:hover {
   box-shadow: 3px 5px 10px black;
 }
+.srvc-btn {
+  border: none;
+  background-color: #cf1b1b;
+  padding: 5px 30px;
+  color: #ffdbc5;
+  font-size: 20px;
+  border-radius: 50px 20px 50px 20px;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.srvc-btn:hover {
+  background-color: #900d0d;
+}

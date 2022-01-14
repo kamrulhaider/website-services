@@ -1,48 +1,12 @@
-.splide__pagination {
-  position: static;
-  display: none;
+.swiper-pagination {
+  bottom: auto !important;
 }
-.splide {
-  height: 100px;
-  padding: 30px;
+.swiper {
   box-shadow: 0 0 10px gray;
+  padding: 50px 30px;
   border-radius: 10px;
 }
-.splide__slide a {
-  text-decoration: none;
-  font-size: 1.2rem;
+.swiper-slide h1 {
+  font-size: 25px;
   font-weight: 700;
-  color: #900d0d;
-}
-/* Pop */
-@-webkit-keyframes hvr-pop {
-  50% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-}
-@keyframes hvr-pop {
-  50% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-}
-.splide__slide a {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.splide__slide a:hover,
-.splide__slide a:focus,
-.splide__slide a:active {
-  -webkit-animation-name: hvr-pop;
-  animation-name: hvr-pop;
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
 }
