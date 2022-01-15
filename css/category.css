@@ -1,7 +1,14 @@
+.category {
+  background-image: url(../images/category-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .swiper-pagination {
   bottom: auto !important;
 }
 .swiper {
+  background-color: white;
   box-shadow: 0 0 10px gray;
   padding: 50px 30px;
   border-radius: 10px;

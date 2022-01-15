@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/category.css">
     <link rel="stylesheet" href="css/featured.css">
+    <link rel="stylesheet" href="css/top-category.css">
 
     <title>Service Website</title>
 </head>
@@ -53,8 +54,17 @@
                             <a class="nav-link" aria-current="page" href="index.html"><i
                                     class="fas fa-home me-2"></i>Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                        <li class="nav-item service-menu-drop">
+                            <a class="nav-link service-menu" href="#">Services</a>
+                            <div class="service-menu-dropdown">
+                                <a href="">Name</a>
+                                <a href="">Name</a>
+                                <a href="">Name</a>
+                                <a href="">Name</a>
+                                <a href="">Name</a>
+                                <a href="">Name</a>
+                                <a href="">Name</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Login</a>
@@ -88,7 +98,7 @@
 
     <main>
         <!-- category section start -->
-        <section class="category my-5" data-aos="slide-up">
+        <section class="category py-5 mb-3" data-aos="slide-up">
             <div class="container">
                 <div class="swiper">
                     <div class="swiper-wrapper">
@@ -138,60 +148,94 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sapiente autem sint dolorem nobis?
                         A quo quis qui voluptate magni?</p>
                 </div>
-                <div class="row row-cols-1 row-cols-md-4 g-4 mt-5">
+                <div class="row row-cols-1 row-cols-md-4 g-4 mt-3">
                     <div class="col">
-                        <div class="card h-100">
+                        <div class="card featured-card h-100">
                             <img src="images/header-bg.jpg" class="card-img-top img-fluid" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                            <div class="card-footer bg-transparent">
+                                <h5 class="card-title text-center fw-bold">Medical Function</h5>
                                 <button class="srvc-btn">Book Now</button>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100">
+                        <div class="card featured-card h-100">
                             <img src="images/header-bg.jpg" class="card-img-top img-fluid" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                            <div class="card-footer bg-transparent">
+                                <h5 class="card-title text-center fw-bold">Medical Function</h5>
                                 <button class="srvc-btn">Book Now</button>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100">
+                        <div class="card featured-card h-100">
                             <img src="images/header-bg.jpg" class="card-img-top img-fluid" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                            <div class="card-footer bg-transparent">
+                                <h5 class="card-title text-center fw-bold">Medical Function</h5>
                                 <button class="srvc-btn">Book Now</button>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100">
+                        <div class="card featured-card h-100">
                             <img src="images/header-bg.jpg" class="card-img-top img-fluid" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                            <div class="card-footer bg-transparent">
+                                <h5 class="card-title text-center fw-bold">Medical Function</h5>
                                 <button class="srvc-btn">Book Now</button>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <!-- featured section end -->
 
+        <!-- Top category section start  -->
+        <section class="top-category py-3 mb-5" data-aos="zoom-in">
+            <div class="container">
+                <div class="top-category-title">
+                    <h1>Our Top Service</h1>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sapiente autem sint dolorem nobis?
+                        A quo quis qui voluptate magni?</p>
+                </div>
+                <div class="row row-cols-1 row-cols-md-4 g-4 mt-3">
+                    <div class="col">
+                        <div class="card top-category-card h-100">
+                            <img src="images/header-bg.jpg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center fw-bold">Medical Function</h5>
+                                <button class="top-srvc-btn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card top-category-card h-100">
+                            <img src="images/header-bg.jpg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center fw-bold">Medical Function</h5>
+                                <button class="top-srvc-btn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card top-category-card h-100">
+                            <img src="images/header-bg.jpg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center fw-bold">Medical Function</h5>
+                                <button class="top-srvc-btn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card top-category-card h-100">
+                            <img src="images/header-bg.jpg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center fw-bold">Medical Function</h5>
+                                <button class="top-srvc-btn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
