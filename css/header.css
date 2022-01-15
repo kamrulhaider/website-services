@@ -11,60 +11,31 @@ p {
 }
 header {
   height: 100vh;
-  background-image: url(../images/header-bg.jpg);
+  background-image: url(../images/top-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.header-bg {
-  background-color: #423144;
-}
-.phone-email {
+/* .phone-email {
   background-color: #900d0d;
 }
 .phone-email p {
   margin: 3px 5px;
   color: #ffdbc5;
-}
+} */
 .logo {
-  color: #ffdbc5 !important;
+  color: #10375c !important;
 }
 .nav-link {
-  color: #ffdbc5 !important;
-  font-weight: 700;
-  margin-right: 20px;
+  color: #10375c !important;
+  padding: 10px 15px !important;
+  border-radius: 0 0 5px 5px;
+  transition: all 0.4s ease-in-out;
 }
-
-/* Underline From Left */
-.nav-link {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  overflow: hidden;
-}
-.nav-link:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  right: 100%;
-  bottom: 0;
-  background: #ffdbc5;
-  height: 4px;
-  -webkit-transition-property: right;
-  transition-property: right;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.nav-link:hover:before,
-.nav-link:focus:before,
-.nav-link:active:before {
-  right: 0;
+.nav-link:hover {
+  background-color: #10375c !important;
+  border-radius: 0 0 10px 10px;
+  color: white !important;
 }
 .service-menu-drop {
   position: relative;
@@ -75,15 +46,38 @@ header {
   background-color: #ffdbc5;
   z-index: 1;
 }
-.service-menu-dropdown a {
-  color: black;
+.service-menu-dropdown-a a {
+  color: #10375c;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 3px 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
-.service-menu-dropdown a:hover {
-  color: red;
+.service-menu-dropdown-a a:hover {
+  background-color: #10375c;
+  border-radius: 10px;
+  color: white;
 }
 .service-menu-drop:hover .service-menu-dropdown {
   display: block;
+  right: 0;
+  width: 50vw;
+  padding: 20px;
+  border-radius: 10px;
 }
-.service-menu-drop:hover .service-menu {
-  background: transparent;
+.service-menu-dropdown:hover .service-menu {
+  background: transparent !important;
+}
+.slider-wrapper {
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-text {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.719);
+  border-radius: 20px;
+  text-align: center;
 }

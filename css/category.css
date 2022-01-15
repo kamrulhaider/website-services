@@ -1,13 +1,13 @@
 .category {
-  background-image: url(../images/category-bg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .swiper-pagination {
   bottom: auto !important;
 }
 .swiper {
+  background-image: url(../images/category-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: white;
   box-shadow: 0 0 10px gray;
   padding: 50px 30px;
@@ -16,4 +16,16 @@
 .swiper-slide h1 {
   font-size: 25px;
   font-weight: 700;
+}
+.slider-wrapper {
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-text {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.719);
+  border-radius: 20px;
+  text-align: center;
 }
