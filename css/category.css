@@ -17,15 +17,3 @@
   font-size: 25px;
   font-weight: 700;
 }
-.slider-wrapper {
-  min-height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.slider-text {
-  padding: 30px;
-  background-color: rgba(255, 255, 255, 0.719);
-  border-radius: 20px;
-  text-align: center;
-}
