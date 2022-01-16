@@ -42,8 +42,9 @@ header {
 .service-menu-dropdown {
   display: none;
   position: absolute;
-  background-color: #ffdbc5;
-  z-index: 1;
+  background-color: #ffffff;
+  z-index: 5;
+  box-shadow: 0 0 5px gray;
 }
 .service-menu-dropdown-a a {
   color: #10375c;
@@ -79,4 +80,43 @@ header {
   background-color: rgba(255, 255, 255, 0.719);
   border-radius: 20px;
   text-align: center;
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .nav-link {
+    padding: 10px 0 !important;
+  }
+  .nav-link:hover {
+    color: #900d0d !important;
+    padding: 10px 0 !important;
+    background-color: transparent !important;
+  }
+  .service-menu-drop:hover .service-menu-dropdown {
+    left: 0;
+    width: 100%;
+  }
+  .slider-wrapper {
+    min-height: 400px;
+  }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+/*Extra extra large devices (Extra large desktops, 1400px and up)*/
+@media (min-width: 1400px) {
 }
