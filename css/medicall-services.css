@@ -1,54 +1,44 @@
-.featured-title {
+.medical-service-title {
   width: 60%;
 }
-.featured-title hr {
+.medical-service-title hr {
   width: 20%;
   height: 5px;
   background-color: #900d0d;
 }
-.featured-card {
+.medical-service-card {
   cursor: pointer;
   border: none;
   box-shadow: 0 0 10px black;
   transition: all 0.3s ease-in-out !important;
 }
-.featured-card,
-.featured-card img {
-  border-radius: 50px 20px 50px 20px;
+.medical-service-card {
+  border-radius: 10px;
+  padding: 20px;
 }
-.featured-card:hover {
+.medical-service-card img {
+  border-radius: 5px;
+  border: 2px solid red;
+}
+.medical-service-card:hover {
   box-shadow: 3px 5px 10px black;
 }
-.srvc-btn {
+.mdcl-srvc-btn {
   border: none;
   background-color: #cf1b1b;
   padding: 5px 30px;
   color: #ffdbc5;
   font-size: 20px;
-  border-radius: 50px 20px 50px 20px;
+  border-radius: 10px;
   width: 100%;
   transition: all 0.5s ease-in-out;
 }
-.srvc-btn:hover {
+.mdcl-srvc-btn:hover {
   background-color: #900d0d;
-}
-.back-to-top {
-  position: fixed;
-  z-index: 1000;
-  right: 30px;
-  bottom: 5%;
-  padding: 5px;
-  border-radius: 50%;
-  box-shadow: 0 0 20px black;
-  cursor: pointer;
-  transition: all 0.4s ease;
-}
-.back-to-top:hover {
-  transform: scale(1.2);
 }
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
-  .featured-title {
+  .medical-service-title {
     width: 100%;
   }
 }

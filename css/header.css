@@ -3,6 +3,15 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+body {
+  background: rgb(254, 226, 239);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 226, 239, 1) 0%,
+    rgba(227, 227, 255, 1) 51%,
+    rgba(255, 252, 230, 0.5) 100%
+  );
+}
 h1 {
   color: #900d0d;
 }
@@ -70,7 +79,7 @@ header {
   background: transparent !important;
 }
 .slider-wrapper {
-  min-height: 600px;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;

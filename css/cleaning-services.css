@@ -1,54 +1,50 @@
-.featured-title {
+.cleaning-service {
+  background-image: url(../images/13843.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cleaning-service-title {
   width: 60%;
 }
-.featured-title hr {
+.cleaning-service-title hr {
   width: 20%;
   height: 5px;
   background-color: #900d0d;
 }
-.featured-card {
+.cleaning-service-card {
   cursor: pointer;
   border: none;
   box-shadow: 0 0 10px black;
   transition: all 0.3s ease-in-out !important;
 }
-.featured-card,
-.featured-card img {
-  border-radius: 50px 20px 50px 20px;
+.cleaning-service-card {
+  border-radius: 10px;
+  padding: 20px;
 }
-.featured-card:hover {
+.cleaning-service-card img {
+  border-radius: 5px;
+  border: 2px solid red;
+}
+.cleaning-service-card:hover {
   box-shadow: 3px 5px 10px black;
 }
-.srvc-btn {
+.clng-srvc-btn {
   border: none;
   background-color: #cf1b1b;
   padding: 5px 30px;
   color: #ffdbc5;
   font-size: 20px;
-  border-radius: 50px 20px 50px 20px;
+  border-radius: 10px;
   width: 100%;
   transition: all 0.5s ease-in-out;
 }
-.srvc-btn:hover {
+.clng-srvc-btn:hover {
   background-color: #900d0d;
-}
-.back-to-top {
-  position: fixed;
-  z-index: 1000;
-  right: 30px;
-  bottom: 5%;
-  padding: 5px;
-  border-radius: 50%;
-  box-shadow: 0 0 20px black;
-  cursor: pointer;
-  transition: all 0.4s ease;
-}
-.back-to-top:hover {
-  transform: scale(1.2);
 }
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
-  .featured-title {
+  .cleaning-service-title {
     width: 100%;
   }
 }
