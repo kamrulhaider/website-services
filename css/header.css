@@ -105,9 +105,6 @@ header {
     left: 0;
     width: 100%;
   }
-  .slider-wrapper {
-    min-height: 400px;
-  }
 }
 
 /*Small devices (landscape phones, 576px and up)*/
