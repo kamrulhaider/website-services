@@ -1,0 +1,21 @@
+header {
+  background: none;
+}
+.tab-link {
+  border: none;
+  background-color: transparent;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #10375c;
+  text-align: left;
+}
+.active {
+  background-color: #10375c;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.tab-pane {
+  color: #10375c;
+  background-color: transparent !important;
+}
