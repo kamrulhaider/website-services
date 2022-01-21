@@ -2,3 +2,56 @@
   font-size: 25px;
   color: rgb(230, 165, 26);
 }
+.booking-form {
+  padding: 20px;
+}
+.booking-form input {
+  width: 100%;
+  border: none;
+  margin: 15px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(137, 192, 121) inset;
+  padding: 20px 20px;
+  height: 40px;
+  color: black;
+}
+.booking-form input:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px rgb(195, 243, 180);
+}
+.single-line {
+  display: flex;
+  align-items: center;
+}
+.single-line button {
+  border: none;
+  border-radius: 5px 0 0 5px;
+  background-color: rgb(195, 243, 180);
+  height: 40px;
+  padding: 0 20px;
+}
+.single-line button:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.booking-form select {
+  width: 100%;
+  border: none;
+  outline: none;
+  margin: 15px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgb(174, 250, 151);
+}
+.booking-form select option {
+  padding: 5px 10px;
+}
+.price-btn {
+  border: none;
+  background-color: rgb(250, 173, 173);
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: all 0.4s ease;
+}
+.price-btn:hover {
+  background-color: rgb(195, 243, 180);
+}
