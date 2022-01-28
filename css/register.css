@@ -5,26 +5,26 @@ body {
   background-size: cover;
   height: 100vh;
 }
-.login {
+.register {
   background-color: rgb(88, 88, 88);
-  height: 350px;
+  height: 500px;
   opacity: 0.7;
   border-radius: 10px;
 }
-.login form h4 {
+.register form h4 {
   text-align: center;
   margin-bottom: 20px;
   font-size: 30px;
   color: white;
 }
-.login form input {
+.register form input {
   background-color: white;
   margin-bottom: 20px;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
 }
-.login form input:focus {
+.register form input:focus {
   outline: none;
 }
 .login-button button {

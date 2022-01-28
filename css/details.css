@@ -55,3 +55,14 @@
 .price-btn:hover {
   background-color: rgb(195, 243, 180);
 }
+#searchDropdown {
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px 10px;
+  z-index: 100;
+}
+#searchDropdown h5 {
+  border-bottom: 1px solid gray;
+}

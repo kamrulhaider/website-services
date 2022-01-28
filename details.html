@@ -333,26 +333,31 @@
                         </div>
                     </div>
                     <div class="col-md-5 p-2 shadow-lg">
-                        <form class="bg-white booking-form rounded-3 fs-5" action="">
-                            <label class="text-center d-block" for="">London House Cleaning</label>
-                            <input type="text" placeholder="postal code">
+                        <form id="detailsForm" class="bg-white booking-form rounded-3 fs-5" action="">
+                            <label class="text-center d-block" for="">Area</label>
+                            <input type="search" placeholder="search">
                             <h5 class="text-center">About your place</h5>
                             <div class="single-line">
-                                <button>-</button>
-                                <input type="text" name="" id="" value="1 bedroom">
-                                <button>+</button>
+                                <button id="minusBed">-</button>
+                                <input disabled type="text" name="" id="bedroomCount" value="0 Bedroom">
+                                <button id="plusBed">+</button>
                             </div>
                             <div class="single-line">
-                                <button>-</button>
-                                <input type="text" name="" id="" value="1 bathroom">
-                                <button>+</button>
+                                <button id="minusBath">-</button>
+                                <input disabled type="text" name="" id="bathroomCount" value="0 Bathroom">
+                                <button id="plusBath">+</button>
+                            </div>
+                            <div class="single-line">
+                                <button id="minusDraw">-</button>
+                                <input disabled type="text" name="" id="drawingCount" value="0 Drawing Room">
+                                <button id="plusDraw">+</button>
                             </div>
                             <h5 class="text-center">Estimated time</h5>
                             <select name="" id="">
                                 <option value="One hour" selected>One hour</option>
                             </select>
                             <h5 class="text-center">When would you like us to come?</h5>
-                            <input type="date" name="" id="">
+                            <input type="date" name="" id="txtDate">
                             <select name="" id="">
                                 <option value="One hour" selected>10:30 am</option>
                             </select>
@@ -369,6 +374,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="js/count.js"></script>
 </body>
 
 </html>

@@ -1,11 +1,17 @@
 header {
   background: none;
 }
+.nav {
+  border: 1px solid gray;
+  padding: 10px;
+  background-color: white;
+}
 .tab-link {
-  border: none;
   background-color: transparent;
-  margin-bottom: 10px;
-  font-size: 25px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
   font-weight: 700;
   color: #10375c;
   text-align: left;
