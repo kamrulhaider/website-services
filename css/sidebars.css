@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+.sidebar {
+  margin: 1% 0.5%;
+  height: 100%;
+  border-radius: 10px;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 10px gray;
+  background-color: #ffdbc5;
+  overflow-x: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.sidebar a,
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #10375c;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+  border-bottom: 1px solid gray;
+}
+
+.sidebar a:hover {
+  color: #8d4646;
+}
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  border: none;
+  background-color: transparent;
+}
+
+#main {
+  margin-left: 200px;
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: rgb(255, 110, 110);
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #ffdfdf;
+  padding-left: 8px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
