@@ -1,8 +1,8 @@
 function openNav() {
     let sidenav = document.getElementById("mySidebar"),
         main = document.getElementById("main");
-    main.style.marginLeft = main.style.marginLeft === "200px" ? '0' : '200px';
-    sidenav.style.width = sidenav.style.width === "200px" ? '0' : '200px';
+    main.style.marginLeft = main.style.marginLeft === "0px" ? "200px" : "0px";
+    sidenav.style.width = sidenav.style.width === "0px" ? "200px" : "0px";
 }
 
 let dropdown = document.getElementsByClassName("dropdown-btn");

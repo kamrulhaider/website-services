@@ -35,8 +35,8 @@
                 <i class="bi bi-arrow-down-short"></i>
             </button>
             <div class="dropdown-container">
-                <a href="#">All Services</a>
-                <a href="#">Add Services</a>
+                <a href="serviceList.html">All Services</a>
+                <a href="add-service.html">Add Services</a>
             </div>
         </div>
 
@@ -46,10 +46,10 @@
             </div>
 
             <div class="container-fluid rounded-3 mt-3">
-                <h5 class="mt-2">Add Services</h5>
+                <h5 class="mt-2">Add Service</h5>
                 <hr class="bg-dark">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 shadow-lg rounded-3 p-3">
                         <label for="serviceName" class="mb-2">Service Name</label>
                         <input type="text" id="serviceName" class="form-control mb-3">
 
@@ -60,55 +60,93 @@
                         <input type="file" id="serviceImage" class="form-control mb-3">
 
                         <label for="serviceCategory" class="mb-2">Parent Service</label>
-                        <select class="form-select mb-3" id="serviceCategory">
-                            <option selected>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                        <select onchange="showSubCategory()" class="form-select mb-3" id="serviceCategory">
+                            <option selected>select your main service</option>
+                            <option value="1">Medical Function</option>
+                            <option value="2">Beauty Care</option>
+                            <option value="3">Saloon</option>
                         </select>
-                        <label for="title1" class="mb-2">Title One</label>
-                        <input type="text" id="title1" class="form-control mb-3">
 
-                        <label for="title1Description" class="mb-2">Short Description</label>
-                        <textarea class="form-control mb-3" id="title1Description" style="height: 100px"></textarea>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="featureSwitch">
+                            <label class="form-check-label" for="featureSwitch">Set as Featured</label>
+                        </div>
 
-                        <label for="title1Image" class="mb-2">Service Image</label>
-                        <input type="file" id="title1Image" class="form-control mb-3">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="recommendSwitch">
+                            <label class="form-check-label" for="recommendSwitch">Set as Recommended</label>
+                        </div>
 
-                        <label for="title2" class="mb-2">Title two</label>
-                        <input type="text" id="title2" class="form-control mb-3">
+                        <div id="title-one" hidden>
+                            <label for="title1" class="mb-2">Title One</label>
+                            <input type="text" id="title1" class="form-control mb-3">
 
-                        <label for="title2Description" class="mb-2">Short Description</label>
-                        <textarea class="form-control mb-3" id="title2Description" style="height: 100px"></textarea>
+                            <label for="title1Description" class="mb-2">Short Description</label>
+                            <textarea class="form-control mb-3" id="title1Description" style="height: 100px"></textarea>
 
-                        <label for="title2Image" class="mb-2">Service Image</label>
-                        <input type="file" id="titile1Image" class="form-control mb-3">
+                            <label for="title1Image" class="mb-2">Service Image</label>
+                            <input type="file" id="title1Image" class="form-control mb-3">
+                        </div>
+
+                        <div id="title-two" hidden>
+                            <label for="title2" class="mb-2">Title two</label>
+                            <input type="text" id="title2" class="form-control mb-3">
+
+                            <label for="title2Description" class="mb-2">Short Description</label>
+                            <textarea class="form-control mb-3" id="title2Description" style="height: 100px"></textarea>
+
+                            <label for="title2Image" class="mb-2">Service Image</label>
+                            <input type="file" id="titile1Image" class="form-control mb-3">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 p-3" id="hidden-description">
+
+                        <div id="title-three" hidden>
+                            <label for="title3" class="mb-2">Title three</label>
+                            <input type="text" id="title3" class="form-control mb-3">
+
+                            <label for="title3Description" class="mb-2">Short Description</label>
+                            <textarea class="form-control mb-3" id="title3Description" style="height: 100px"></textarea>
+
+                            <label for="title3Image" class="mb-2">Service Image</label>
+                            <input type="file" id="title3Image" class="form-control mb-3">
+                        </div>
+
+                        <div id="title-four" hidden>
+                            <label for="title4" class="mb-2">Title four</label>
+                            <input type="text" id="title4" class="form-control mb-3">
+
+                            <label for="title4Description" class="mb-2">Short Description</label>
+                            <textarea class="form-control mb-3" id="title4Description" style="height: 100px"></textarea>
+
+                            <label for="title4Image" class="mb-2">Service Image</label>
+                            <input type="file" id="title4Image" class="form-control mb-3">
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 mt-3">
                         <button type="submit" class="btn btn-success">Save</button>
                         <button type="submit" class="btn btn-dark">Cancel</button>
                     </div>
-
-                    <div class="col-md-6">
-
-                        <label for="title3" class="mb-2">Title three</label>
-                        <input type="text" id="title3" class="form-control mb-3">
-
-                        <label for="title3Description" class="mb-2">Short Description</label>
-                        <textarea class="form-control mb-3" id="title3Description" style="height: 100px"></textarea>
-
-                        <label for="title3Image" class="mb-2">Service Image</label>
-                        <input type="file" id="title3Image" class="form-control mb-3">
-
-                        <label for="title4" class="mb-2">Title four</label>
-                        <input type="text" id="title4" class="form-control mb-3">
-
-                        <label for="title4Description" class="mb-2">Short Description</label>
-                        <textarea class="form-control mb-3" id="title4Description" style="height: 100px"></textarea>
-
-                        <label for="title4Image" class="mb-2">Service Image</label>
-                        <input type="file" id="title4Image" class="form-control mb-3">
-
+                </div>
+                <h5 class="mt-4">Meta Data</h5>
+                <hr class="bg-dark">
+                <div class="row">
+                    <div class="col-md-6 shadow-lg rounded-3 p-3">
+                        <label for="metaTitleName" class="mb-2">Meta Title</label>
+                        <input type="text" id="metaTitleName" class="form-control mb-3">
+                        <label for="metaTagName" class="mb-2">Meta Tags</label>
+                        <input type="text" id="metaTagName" class="form-control mb-3">
                     </div>
-
+                    <div class="col-md-6 shadow-lg rounded-3 p-3">
+                        <label for="metaDescription" class="mb-2">Meta Description</label>
+                        <textarea class="form-control mb-3" id="metaDescription" style="height: 100px"></textarea>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <button type="submit" class="btn btn-success">Save</button>
+                        <button type="submit" class="btn btn-dark">Cancel</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -119,6 +157,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="js/sidebar.js"></script>
+    <script src="js/subCategory.js"></script>
 </body>
 
 </html>
