@@ -8,13 +8,19 @@ function fullTable() {
     document.getElementById('categoryTable').classList.remove('col-md-7');
 }
 
-function deactivate() {
-    const active = document.getElementById('activeSwitch').value;
-    const activeInt = parseInt(active);
+
+
+function deactivate(number) {
+    const activeList = document.getElementsByClassName('activeLabel');
+    const active = document.getElementsByClassName('activeSwitch');
+    const activeInt = parseInt(active[number].value);
+
     if (activeInt === 0) {
-        document.getElementById('activeSwitch').value = 1;
+        active[number].value = 1;
+        activeList[number].innerHTML = "inactive";
     }
     else {
-        document.getElementById('activeSwitch').value = 0;
+        active[number].value = 0;
+        activeList[number].innerHTML = "active";
     }
 }
