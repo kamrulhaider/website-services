@@ -1,0 +1,14 @@
+.other-doc {
+  background-color: aliceblue;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+.other-doc img {
+  border-radius: 10px;
+}
+.other-doc:hover {
+  box-shadow: 3px 3px 10px gray;
+}
+.fee::before {
+  content: "*";
+}
