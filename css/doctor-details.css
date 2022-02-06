@@ -12,3 +12,6 @@
 .fee::before {
   content: "*";
 }
+.other-doc p {
+  font-size: 14px;
+}
