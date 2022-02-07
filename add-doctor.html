@@ -68,11 +68,26 @@
             </div>
 
             <div class="container-fluid">
+                <h5 class="mt-3">Add new doctor in the database</h5>
+                <hr>
                 <div class="row">
-                    <div class="table-responsive-sm">
-                        <table class="table">
-
-                        </table>
+                    <div class="col-md-6">
+                        <form action="" class="p-4 shadow">
+                            <label for="doctorName">Doctor's name</label>
+                            <input class="form-control form-control-sm mb-3" type="text" id="doctorName">
+                            <label for="doctorDegree">Doctor's degree</label>
+                            <input type="text" class="form-control form-control-sm mb-3" id="doctorDegree">
+                            <label for="doctorSpeciality">Doctor's speciality</label>
+                            <input type="text" id="doctorSpeciality" class="form-control form-control-sm mb-3">
+                            <label for="doctorHospital">Doctor's hospital</label>
+                            <input type="text" id="doctorHospital" class="form-control form-control-sm mb-3">
+                            <label for="doctorTime">Doctor's time</label>
+                            <input type="text" id="doctorTime" class="form-control form-control-sm mb-3">
+                            <label for="doctorImg">Doctor's Image</label>
+                            <input type="file" id="doctorImg" class="form-control form-control-sm mb-3">
+                            <input type="submit" class="btn btn-outline-success">
+                            <input type="submit" value="Cancel" class="btn btn-outline-dark">
+                        </form>
                     </div>
                 </div>
             </div>
