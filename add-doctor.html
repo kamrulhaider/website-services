@@ -78,11 +78,63 @@
                             <label for="doctorDegree">Doctor's degree</label>
                             <input type="text" class="form-control form-control-sm mb-3" id="doctorDegree">
                             <label for="doctorSpeciality">Doctor's speciality</label>
-                            <input type="text" id="doctorSpeciality" class="form-control form-control-sm mb-3">
+                            <select class="form-select mb-3" id="doctorSpeciality">
+                                <option selected>Select speciality</option>
+                                <option value="1">Medicine, Gastroenterology & Liver Diseases Specialist</option>
+                                <option value="2">General, Breast, Laparoscopic & Colorectal Specialist Surgeon</option>
+                                <option value="3">General, Laparoscopic, Colorectal & Breast Surgeon</option>
+                            </select>
                             <label for="doctorHospital">Doctor's hospital</label>
-                            <input type="text" id="doctorHospital" class="form-control form-control-sm mb-3">
-                            <label for="doctorTime">Doctor's time</label>
-                            <input type="text" id="doctorTime" class="form-control form-control-sm mb-3">
+                            <select class="form-select mb-3" id="doctorHospital">
+                                <option selected>Select Hospital</option>
+                                <option value="1">Dhaka Medical College & Hospital</option>
+                                <option value="2">Bangabandhu Sheikh Mujib Medical University Hospital</option>
+                                <option value="3">General Hospital, Narayanganj</option>
+                            </select>
+
+                            <label for="doctorTime">Visiting day</label>
+                            <div class="d-flex mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="saturday">
+                                    <label class="form-check-label me-3" for="saturday">Sat
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="sunday">
+                                    <label class="form-check-label me-3" for="sunday">Sun
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="monday">
+                                    <label class="form-check-label me-3" for="monday">Mon
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="tuesday">
+                                    <label class="form-check-label me-3" for="tuesday">Tui
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="wednesday">
+                                    <label class="form-check-label me-3" for="wednesday">Wed
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="thursday">
+                                    <label class="form-check-label me-3" for="thursday">Thu
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="friday">
+                                    <label class="form-check-label" for="friday">Fri
+                                    </label>
+                                </div>
+                            </div>
+
+                            <label for="docStartTime">Visit start</label>
+                            <input type="time" id="docStartTime" class="form-control form-control-sm mb-3">
+                            <label for="docEndTime">Visit end</label>
+                            <input type="time" id="docEndTime" class="form-control form-control-sm mb-3">
                             <label for="doctorImg">Doctor's Image</label>
                             <input type="file" id="doctorImg" class="form-control form-control-sm mb-3">
                             <input type="submit" class="btn btn-outline-success">
