@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../css/sidebars.css">
+  <title>Service Website-Admin</title>
+</head>
+
+<body>
+  <div class="admin-panel container-fluid">
+    <!-- sidebar part  -->
+    <div id="mySidebar" class="sidebar">
+      <a href="../index.html" class="ps-0">
+        <img src="../images/logo.png" class="img-fluid p-3" alt="">
+      </a>
+
+      <button class="dropdown-btn"><i class="bi bi-house"></i> Dashboard
+        <i class="bi bi-arrow-down-short"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="../admin.html">Admin home</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+
+      <button class="dropdown-btn"><i class="bi bi-card-checklist"></i> Services
+        <i class="bi bi-arrow-down-short"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="../serviceList.html">All Services</a>
+        <a href="../add-service.html">Add Services</a>
+      </div>
+
+      <button class="dropdown-btn"><i class="bi bi-activity"></i> Doctors
+        <i class="bi bi-arrow-down-short"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="../add-doctor.html">Add doctors</a>
+        <a href="../doctor-list.html">Doctor's list</a>
+        <a href="../serial-requested.html">Requested serial</a>
+        <a href="../doctor-category.html">Category</a>
+        <a href="../doctor-hospital.html">Hospital</a>
+      </div>
+
+      <button class="dropdown-btn"><i class="bi bi-badge-ad"></i> Volunteer
+        <i class="bi bi-arrow-down-short"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="../volunteer-request.html">Requested</a>
+        <a href="../volunteer-category.html">Category</a>
+      </div>
+
+    </div>
+
+    <div id="main">
+      <div class="border rounded-3">
+        <button class="openbtn" onclick="openNav()"><i class="bi bi-text-indent-left"></i></button>
+      </div>
+
+      <div class="container-fluid mt-3">
+        <div class="row">
+          <div class="col-md-7 border bg-light rounded-3 p-3 position-relative" id="categoryTable">
+            <div class="position-absolute top-0 end-0 p-2">
+              <i onclick="editCategory()" class="bi bi-pencil-square editIcon"></i>
+            </div>
+            <div class="doctor-img d-flex justify-content-center p-3 h-50">
+              <img class="rounded-3 img-fluid" src="../images/doctor-name.jpg" alt="">
+            </div>
+            <div class="doctor-content text-center">
+              <h3 class="card-title">Dr. Md. Abdus Salam</h3>
+              <p class="text-muted h6">MBBS, D-CARD (BSMMU), CCD (BIRDEM)</p>
+              <p class="text-info h6">Cardiology & Diabetes Specialist</p>
+              <p class="text-danger h6">Bangabandhu Sheikh Mujib Medical University
+                Hospital
+              </p>
+              <p class="text-success h6">Sunday to Thursday (7:00 pm to 10:00 pm)</p>
+            </div>
+          </div>
+
+          <!-- editing form  -->
+          <!-- form edit  -->
+          <div hidden class="col-md-5 mb-3" id="categoryEdit">
+            <form action="" class="p-4 shadow rounded-3">
+              <label for="doctorName">Doctor's name</label>
+              <input class="form-control form-control-sm mb-3" type="text" id="doctorName">
+              <label for="doctorDegree">Doctor's degree</label>
+              <input type="text" class="form-control form-control-sm mb-3" id="doctorDegree">
+              <label for="doctorSpeciality">Doctor's speciality</label>
+              <select class="form-select mb-3" id="doctorSpeciality">
+                <option selected>Select speciality</option>
+                <option value="1">Medicine, Gastroenterology & Liver Diseases Specialist</option>
+                <option value="2">General, Breast, Laparoscopic & Colorectal Specialist Surgeon</option>
+                <option value="3">General, Laparoscopic, Colorectal & Breast Surgeon</option>
+              </select>
+              <label for="doctorHospital">Doctor's hospital</label>
+              <select class="form-select mb-3" id="doctorHospital">
+                <option selected>Select Hospital</option>
+                <option value="1">Dhaka Medical College & Hospital</option>
+                <option value="2">Bangabandhu Sheikh Mujib Medical University Hospital</option>
+                <option value="3">General Hospital, Narayanganj</option>
+              </select>
+
+              <label for="doctorTime">Visiting day</label>
+              <div class="d-md-flex  mb-3 flex-wrap">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="saturday">
+                  <label class="form-check-label me-3" for="saturday">Sat
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="sunday">
+                  <label class="form-check-label me-3" for="sunday">Sun
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="monday">
+                  <label class="form-check-label me-3" for="monday">Mon
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="tuesday">
+                  <label class="form-check-label me-3" for="tuesday">Tui
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="wednesday">
+                  <label class="form-check-label me-3" for="wednesday">Wed
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="thursday">
+                  <label class="form-check-label me-3" for="thursday">Thu
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="friday">
+                  <label class="form-check-label" for="friday">Fri
+                  </label>
+                </div>
+              </div>
+
+              <label for="docStartTime">Visit start</label>
+              <input type="time" id="docStartTime" class="form-control form-control-sm mb-3">
+              <label for="docEndTime">Visit end</label>
+              <input type="time" id="docEndTime" class="form-control form-control-sm mb-3">
+              <label for="doctorImg">Doctor's Image</label>
+              <input type="file" id="doctorImg" class="form-control form-control-sm mb-3">
+              <button type="submit" class="btn btn-success">Save</button>
+              <button onclick="fullTable()" type="submit" class="btn btn-dark">Cancel</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- script link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="../js/sidebar.js"></script>
+  <script src="../js/drTableDetails.js"></script>
+</body>
+
+</html>
