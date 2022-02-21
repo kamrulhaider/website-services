@@ -1,5 +1,5 @@
 function drTableDetails() {
-  window.location.href = "../details/drTableDetails.html";
+  window.location.href = "drTableDetails.html";
 };
 
 function editCategory() {
