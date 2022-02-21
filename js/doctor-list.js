@@ -1,16 +1,16 @@
 function drTableDetails() {
-  window.location.href = "../details/drTableDetails.html"
-}
+  window.location.href = "../details/drTableDetails.html";
+};
 
 function editCategory() {
   document.getElementById('categoryTable').classList.add('col-md-7');
   document.getElementById('categoryEdit').removeAttribute("hidden");
-}
+};
 
 function fullTable() {
   document.getElementById('categoryEdit').setAttribute("hidden", true);
   document.getElementById('categoryTable').classList.remove('col-md-7');
-}
+};
 
 
 
@@ -27,4 +27,4 @@ function deactivate(number) {
     active[number].value = 0;
     activeList[number].innerHTML = "active";
   }
-}
+};
