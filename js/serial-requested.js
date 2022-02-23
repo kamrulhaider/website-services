@@ -1,3 +1,6 @@
+function patientDetails() {
+  window.location.href = "patient-details.html";
+};
 
 const serialStatus = document.getElementsByClassName("serial-status");
 console.log(serialStatus)

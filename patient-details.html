@@ -68,23 +68,68 @@
         <button class="openbtn" onclick="openNav()"><i class="bi bi-text-indent-left"></i></button>
       </div>
 
-      <div class="container-fluid">
-        <h5 class="mt-3">List of doctor's</h5>
-        <hr>
+      <div class="container-fluid mt-3">
         <div class="row">
-          <div class="table-responsive-sm">
-            <table class="table table-striped table-danger table-hover">
-              <tr>
-                <th>Name</th>
-                <th>Requested Category</th>
-                <th>Edit</th>
-              </tr>
-              <tr>
-                <td>Some name</td>
-                <td>Medical Service</td>
-                <td><i class="bi bi-pencil-square editIcon"></i></td>
-              </tr>
-            </table>
+          <div class="col-md-7 border bg-light rounded-3 p-3 position-relative" id="categoryTable">
+            <div class="position-absolute top-0 end-0 p-2">
+              <i onclick="editCategory()" class="bi bi-pencil-square editIcon"></i>
+            </div>
+            <div class="doctor-content">
+              <table class="table">
+                <tr>
+                  <th>Patient Name: </th>
+                  <td>Dilruba Akter</td>
+                </tr>
+                <tr>
+                  <th>Hospital Name: </th>
+                  <td>Dhaka Medical College</td>
+                </tr>
+                <tr>
+                  <th>Requested Doctor: </th>
+                  <td>Dr. Dilruba Khan</td>
+                </tr>
+                <tr>
+                  <th>Doctor's Time: </th>
+                  <td>sun, mon and tue (7:00-10:00)</td>
+                </tr>
+                <tr>
+                  <th>Email: </th>
+                  <td>email@email.com</td>
+                </tr>
+                <tr>
+                  <th>Phone: </th>
+                  <td>+88016700000</td>
+                </tr>
+                <tr>
+                  <th>Status: </th>
+                  <td>
+                    <select class="form-select form-select-sm">
+                      <option selected>Pending</option>
+                      <option value="1">Approve</option>
+                      <option value="2">Reject</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- editing form  -->
+          <!-- form edit  -->
+          <div hidden class="col-md-5 mb-3" id="categoryEdit">
+            <form action="" class="p-4 shadow rounded-3">
+              <label for="serviceName" class="mb-2">Patient Name</label>
+              <input type="text" id="serviceName" class="form-control mb-3">
+
+              <label for="hospitalName" class="mb-2">Hospital Name</label>
+              <input type="text" id="hospitalName" class="form-control mb-3">
+
+              <label for="doctorName" class="mb-2">Doctor name</label>
+              <input type="text" id="doctorName" class="form-control mb-3">
+
+              <button type="submit" class="btn btn-success">Save</button>
+              <button onclick="fullTable()" type="submit" class="btn btn-dark">Cancel</button>
+            </form>
           </div>
         </div>
       </div>
@@ -96,6 +141,7 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <script src="js/sidebar.js"></script>
+  <script src="js/drTableDetails.js"></script>
 </body>
 
 </html>

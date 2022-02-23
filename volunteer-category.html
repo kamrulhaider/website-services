@@ -56,6 +56,7 @@
         <i class="bi bi-arrow-down-short"></i>
       </button>
       <div class="dropdown-container">
+        <a href="add-volunteer.html">Add Volunteer</a>
         <a href="volunteer-request.html">Requested</a>
         <a href="volunteer-category.html">Category</a>
       </div>
@@ -83,12 +84,20 @@
               <tr>
                 <th>#</th>
                 <th>volunteer Category Name</th>
+                <th>Status</th>
                 <th>Edit</th>
               </tr>
 
               <tr class="docCategoryRow">
                 <td> 1</td>
                 <td class="docCategoryName">Medical Services</td>
+                <td style="width: 200px;">
+                  <div class="form-check form-switch">
+                    <input onchange="deactivate(0)" class="form-check-input activeSwitch" type="checkbox" checked
+                      value="0">
+                    <label class="form-check-label activeLabel" for="activeSwitch">active</label>
+                  </div>
+                </td>
                 <td><i data-bs-toggle="modal" data-bs-target="#editDoctCategory"
                     class="bi bi-pencil-square editIcon"></i>
                 </td>
@@ -97,6 +106,13 @@
               <tr class="docCategoryRow">
                 <td> 2</td>
                 <td class="docCategoryName">Beauty care</td>
+                <td style="width: 200px;">
+                  <div class="form-check form-switch">
+                    <input onchange="deactivate(1)" class="form-check-input activeSwitch" type="checkbox" checked
+                      value="0">
+                    <label class="form-check-label activeLabel" for="activeSwitch">active</label>
+                  </div>
+                </td>
                 <td><i data-bs-toggle="modal" data-bs-target="#editDoctCategory"
                     class="bi bi-pencil-square editIcon"></i>
                 </td>
@@ -140,6 +156,7 @@
       crossorigin="anonymous"></script>
     <script src="js/sidebar.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/add-volunteer.js"></script>
 </body>
 
 </html>
