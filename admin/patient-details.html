@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../css/sidebars.css">
+  <title>Service Website-Admin</title>
+</head>
+
+<body>
+  <div class="admin-panel container-fluid">
+    <!-- sidebar part  -->
+    <div id="mySidebar" class="sidebar">
+      <a href="../index.html" class="ps-0">
+        <img src="../images/logo.png" class="img-fluid p-3" alt="">
+      </a>
+
+      <button class="dropdown-btn"><i class="bi bi-house"></i> Dashboard
+        <i class="bi bi-arrow-down-short"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="admin.html">Admin home</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+
+      <button class="dropdown-btn"><i class="bi bi-card-checklist"></i> Services
+        <i class="bi bi-arrow-down-short"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="serviceList.html">All Services</a>
+        <a href="add-service.html">Add Services</a>
+      </div>
+
+      <button class="dropdown-btn"><i class="bi bi-activity"></i> Doctors
+        <i class="bi bi-arrow-down-short"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="add-doctor.html">Add doctors</a>
+        <a href="doctor-list.html">Doctor's list</a>
+        <a href="serial-requested.html">Requested serial</a>
+        <a href="doctor-category.html">Category</a>
+        <a href="doctor-hospital.html">Hospital</a>
+      </div>
+
+      <button class="dropdown-btn"><i class="bi bi-badge-ad"></i> Volunteer
+        <i class="bi bi-arrow-down-short"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="add-volunteer.html">Add Volunteer</a>
+        <a href="volunteer-request.html">Requested</a>
+        <a href="volunteer-category.html">Category</a>
+      </div>
+
+    </div>
+
+    <div id="main">
+      <div class="border rounded-3">
+        <button class="openbtn" onclick="openNav()"><i class="bi bi-text-indent-left"></i></button>
+      </div>
+
+      <div class="container-fluid mt-3">
+        <div class="row">
+          <div class="col-md-7 border bg-light rounded-3 p-3 position-relative" id="categoryTable">
+            <div class="position-absolute top-0 end-0 p-2">
+              <i onclick="editCategory()" class="bi bi-pencil-square editIcon"></i>
+            </div>
+            <div class="doctor-content">
+              <table class="table">
+                <tr>
+                  <th>Patient Name: </th>
+                  <td>Dilruba Akter</td>
+                </tr>
+                <tr>
+                  <th>Hospital Name: </th>
+                  <td>Dhaka Medical College</td>
+                </tr>
+                <tr>
+                  <th>Requested Doctor: </th>
+                  <td>Dr. Dilruba Khan</td>
+                </tr>
+                <tr>
+                  <th>Doctor's Time: </th>
+                  <td>sun, mon and tue (7:00-10:00)</td>
+                </tr>
+                <tr>
+                  <th>Email: </th>
+                  <td>email@email.com</td>
+                </tr>
+                <tr>
+                  <th>Phone: </th>
+                  <td>+88016700000</td>
+                </tr>
+                <tr>
+                  <th>Status: </th>
+                  <td>
+                    <select class="form-select form-select-sm">
+                      <option selected>Pending</option>
+                      <option value="1">Approve</option>
+                      <option value="2">Reject</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- editing form  -->
+          <!-- form edit  -->
+          <div hidden class="col-md-5 mb-3" id="categoryEdit">
+            <form action="" class="p-4 shadow rounded-3">
+              <label for="serviceName" class="mb-2">Patient Name</label>
+              <input type="text" id="serviceName" class="form-control mb-3">
+
+              <label for="hospitalName" class="mb-2">Hospital Name</label>
+              <input type="text" id="hospitalName" class="form-control mb-3">
+
+              <label for="doctorName" class="mb-2">Doctor name</label>
+              <input type="text" id="doctorName" class="form-control mb-3">
+
+              <button type="submit" class="btn btn-success">Save</button>
+              <button onclick="fullTable()" type="submit" class="btn btn-dark">Cancel</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- script link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="../js/sidebar.js"></script>
+  <script src="../js/drTableDetails.js"></script>
+</body>
+
+</html>
